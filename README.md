@@ -14,7 +14,13 @@
 
 > [!IMPORTANT]
 >
-> Upon activation, the plugin will display a message that it has not been registered. To resolve this, go to "ACF" → "Updates" and enter **any random text** into the field and press "Activate License".
+> Upon activation, the plugin will display a message that it has not been registered. To resolve this, go to "ACF" → "Updates" and enter **any random text** into the field and press "Activate License," or use the following license code.
+
+### License Code
+
+```bash
+83A5BB0E-2AD5-1646-90BC-7A42AE592CF5
+```
 
 This is the **fully activated premium version** of the plugin, provided by [wordpress-premium.net](https://www.wordpress-premium.net?utm_source=acf). It has been scanned for security issues and is intended **for evaluation purposes only**. To use Advanced Custom Fields PRO on a live website, please [purchase a license](https://www.advancedcustomfields.com/pro/) directly from the official website.
 
@@ -24,25 +30,23 @@ This is the **fully activated premium version** of the plugin, provided by [word
 >
 > ## Donate
 >
-> If [WordPress Premium](https://www.wordpress-premium.net/?utm_source=acf) helps you access premium plugins safely, consider supporting us via a donation in any of the available [cryptocurrencies](https://www.wordpress-premium.net/wallets/) to keep the service running.
+> If [WordPress Premium](https://www.wordpress-premium.net/?utm_source=acf) helps you access premium plugins safely, consider supporting us via [a donation through PayPal](https://www.paypal.com/paypalme/thaikolja) or in any of the available [cryptocurrencies](https://www.wordpress-premium.net/wallets/) to keep the service running.
 
 ## Changelog
 
-### v6.5.1
+### v6.6.2
 
-**Released:** September 10th, 2025
+**Release Date:** 29th October 2025
 
-* Enhancement - The Flexible Content “Expand All” and “Collapse All” button now appear correctly on mobile
-* Enhancement - The Flexible Content delete layout button is now back in the main layout header, making it easier to delete layouts
-* Enhancement - The JSON import tool now limits the selectable files to JSON files
-* Fix - Disabled Flexible Content layouts are no longer counted towards min/max layout validation
-* Fix - The top “Add Row” button for layouts is now disabled when layouts have reached the max layouts validation
-* Fix - The per-layout “Add Row” and “Duplicate Layout” buttons are now disabled when layouts have reached the max layouts validation
-* Fix - Disabling Flexible Content layouts no longer disables layouts in cloned Flexible Content fields using a different post ID on the same page
-* Fix - Flexible Content “Add Layout” menu is no longer hidden by some field types
-* Fix - Flexible Content layout names can now allow some safe HTML
-* Fix - When creating a temporary post type during import, ACF now correctly sets the ACF post type, rather than defaulting to post
-* Fix - ACF PRO updates are now shown even when no other plugins have an update available
+- **feat(filters):** add `convert_field_name_to_lowercase` JS filter for uppercase ACF field names
+- **feat(blocks):** add `hideFieldsInSidebar` option to hide V3 Block forms from sidebar
+- **feat(blocks):** add "Open Expanded Editor" button in sidebar for V3 Blocks
+- **fix(metaboxes):** prevent reorder buttons from being hidden in block editor sidebar
+- **fix(blocks):** display fallback message when V3 Block preview fails due to invalid HTML
+- **fix(blocks):** remove loading spinner from preloaded V3 Blocks
+- **fix(blocks):** save default field values in V3 Blocks without user interaction
+- **fix(blocks):** prevent field disappearance on CMD/CTRL + Z in V3 Blocks
+- **fix(blocks):** open V3 Block form on left side for RTL languages
 
 ---
 
